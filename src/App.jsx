@@ -4,13 +4,13 @@ function App(){
   const[age,setAge]=useState(0);
   const[result,setResult]=useState(" ");
   const getmessage=async()=>{
-    const response=await fetch("http://127.0.0.1:5000/api/message");
+    const response=await fetch("https://test-gi4q.onrender.com/api/message");
     const data=await(response.json());
     setMsg(data.message);
   }
   const sendinfo=async()=>{
     const response=await fetch(
-      "http://127.0.0.1:5000/api/voter",
+      "https://test-gi4q.onrender.com/api/voter",
       {
       method:"POST",
       headers:{
